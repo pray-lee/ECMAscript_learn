@@ -13,7 +13,8 @@ let arrayLike = {
 let arr = Array.from(arrayLike)
 
 // Array.of  创建数组 替代new Array()
-let arrayOf = Array.of(3)
+let newArray = new Array(3) // [empty * 3]
+let arrayOf = Array.of(3) // [3]
 console.log(arrayOf)
 
 // copyWithin 三个参数 1.从哪里开始替换 2.从哪里开始截取 3. 到哪里结束    都是取的下标
