@@ -4,6 +4,7 @@ class Point {
         this.x = x
         this.y = y
     }
+    // 方法都定义在原型上面了
     getName() {
         return Point.name
     }

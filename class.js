@@ -31,7 +31,7 @@ Object.assign(Point.prototype, {
     toValue() {}
 })
 
-// "类内部" 定义的方法都是不可枚举的
+// "类内部(在class里面写的方法)" 定义的方法都是不可枚举的
 console.log(Object.keys(Point.prototype)) // ['toString', 'toValue'] 没有a, b
 console.log(Object.getOwnPropertyNames(Point.prototype)) // ['constructor', 'a', 'b', 'toString', 'toValue']
 
