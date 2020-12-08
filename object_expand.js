@@ -10,9 +10,9 @@ console.log('a' in x) // true
 let arr = [1, 2, 3]
 console.log(3 in arr) // false arr没有下标为3的内容
 
-// getOwnPropertyNames 获取属性名
+// getOwnPropertyNames 获取属性名 获取不到symbol定义的属性
 let obj = {a: 1, b: 2}
 Object.getOwnPropertyNames(obj).forEach(key => console.log(key))
 
-// ownKeys 获取属性名
+// ownKeys 获取属性名  可以获取到普通的属性名和symbal属性名
 Reflect.ownKeys(obj).forEach(key => console.log(key))
