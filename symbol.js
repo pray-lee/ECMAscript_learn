@@ -9,11 +9,23 @@ console.log(s === ss) // false
 
 // 第二种声明方式
 // 这种声明方式Symbol定义在全局变量中
+// 如果定义过一次，以后在声明一个相同的描述的话，就会使用之前创建的, 如果之前没有创建，就创建一个新的
 let s1 = Symbol.for('foo')
 let s2 = Symbol.for('foo')
 console.log(s1) // foo
 console.log(s2) // foo
 console.log(s1 === s2) // true 用for声明的时候，如果传入的描述一样，这两个值就相等
+
+
+// 如果description是一个对象的话，他会调用toString()方法转成字符串
+const obj = {
+    toString() {
+        return '123'
+    }
+}
+const symbolObj = Symbol(obj)
+console.log(symbolObj) // symbol(123)
+
 
 // 应用场景
 // 可以用作key值, 一个班级可能有好多个人，人的名字有可能有重复，就可以用symbol
