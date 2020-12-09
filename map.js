@@ -18,6 +18,3 @@ console.log(m1.size) // 1
 console.log(m1.has('name')) // true
 console.log(m1.get('name')) // lee
 
-// 应用场景
-
-
