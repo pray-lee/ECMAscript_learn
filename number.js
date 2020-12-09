@@ -16,7 +16,7 @@ console.log(Number.parseFloat(10.1)) // 10.1
 console.log(Number.isInteger(100)) // true
 console.log(Number.isInteger(100.1)) // false
 
-// 最大最小的数
+// 安全值范围内的最大最小的数
 console.log(Number.MAX_SAFE_INTEGER)
 console.log(Number.MIN_SAFE_INTEGER)
 

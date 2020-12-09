@@ -14,7 +14,7 @@ function ajax(url, {
 }
 ajax('http', {method: 'POST'}) //  POST
 
-// 函数参数length 返回没有指定默认值的参数的个数
+// 函数参数length 返回"没有"指定默认值的参数的个数
 function func_ln(x, y, z) {}
 console.log(func_ln.length) // 3
 function func_ln1(x, y, z = 1) {}

@@ -8,7 +8,7 @@ a(...arr)
 let string = 'lee'
 console.log([...string]) // ['l', 'e', 'e']
 
-// rest参数
+// rest参数 , 接受到的参数会自动传承数组
 function foo(...arr) {
    console.log(arr) // [1, 2, 3]
 }
