@@ -31,3 +31,17 @@ console.log(receiver) // bar: 2 foo 22
 
 // has
 console.log(Reflect.has(myObject, 'foo'))
+
+// delete
+Reflect.deleteProperty(myObject, 'foo') // return true/false
+console.log(Reflect.get(myObject, 'foo')) // undefined
+
+// construct //构造函数
+function Greeting(name) {
+    this.name = name
+}
+const instance = new Greeting('lee')
+const instance_new = Reflect.construct(Greeting, ['lee'])
+console.log(instance, instance_new)
+
+// getPropertyOf setPropertyOf
